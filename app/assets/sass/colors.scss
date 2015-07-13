@@ -1,0 +1,43 @@
+@import '../../../vendor/sass-mq/mq';
+
+
+$c-black: #000;
+$c-white: #fff;
+$c-pink: #D77869;
+$c-seagreen: #6FC2B4;
+$c-lightwarmgrey:#ECEAE5;
+$c-warmgrey:#A396A3;
+$c-purple:#347E84;
+$c-aquablue:#C8C2BE;
+
+.c-black {color:$c-black;}
+
+.c-white {color:$c-white;}
+
+.c-pink {color:$c-pink}
+
+.c-seagreen {color:$c-seagreen;}
+
+.c-lightwarmgrey {color:$c-lightwarmgrey;}
+
+.c-warmgrey {color:$c-warmgrey;}
+
+.c-purple {color:$c-purple;}
+
+.c-aquablue {color:$c-aquablue;}
+
+.c-bg-black {background-color:$c-black;}
+
+.c-bg-white {background-color:$c-white;}
+
+.c-bg-pink {background-color:$c-pink}
+
+.c-bg-seagreen {background-color:$c-seagreen;}
+
+.c-bg-lightwarmgrey {background-color:$c-lightwarmgrey;}
+
+.c-bg-warmgrey {background-color:$c-warmgrey;}
+
+.c-bg-purple {background-color:$c-purple;}
+
+.c-bg-aquablue {background-color:$c-aquablue;}
