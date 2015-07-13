@@ -1,4 +1,4 @@
-@import '../../../vendor/sass-mq/mq';
+//@import '../../../vendor/sass-mq/mq';
 
 $c-black: #000;
 $c-white: #fff;
@@ -23,13 +23,3 @@ $array: (black, $c-black), (white, $c-white), (pink, $c-pink), (seagreen, $c-sea
         background-color: $colorvalue;
     }
 }
-
-
-
-.c-bg-lightwarmgrey {background-color:$c-lightwarmgrey;}
-
-.c-bg-warmgrey {background-color:$c-warmgrey;}
-
-.c-bg-purple {background-color:$c-purple;}
-
-.c-bg-aquablue {background-color:$c-aquablue;}
