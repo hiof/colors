@@ -1,4 +1,30 @@
-//@import '../../../vendor/sass-mq/mq';
+// Functions
+
+
+
+
+
+@function trans($color, $percentage) {
+  @return lighten($color, (1-$percentage)*5%);
+}
+
+
+@mixin transtohex($type, $color, $percentage) {
+    @if $type == color {
+        color: trans($color, $percentage);
+        //color: rgba($color, $percentage);
+    }
+    @if $type == bg {
+        background-color: trans($color, $percentage);
+        //background-color: rgba($color, $percentage);
+    }
+}
+
+
+
+
+
+// Color contstants
 
 $c-black: #000;
 $c-white: #fff;
@@ -10,6 +36,8 @@ $c-purple:#A396A3;
 $c-aquablue:#347E84;
 
 $array: (black, $c-black), (white, $c-white), (pink, $c-pink), (seagreen, $c-seagreen), (lightwarmgrey, $c-lightwarmgrey), (warmgrey, $c-warmgrey), (purple, $c-purple), (aquablue, $c-aquablue);
+
+$tints: (85, .85), (60, .60), (45, .45), (30, .30), (15, .15);
 
 @each $colorname, $colorvalue in $array{
     .c-#{$colorname}{
@@ -23,3 +51,74 @@ $array: (black, $c-black), (white, $c-white), (pink, $c-pink), (seagreen, $c-sea
         background-color: $colorvalue;
     }
 }
+
+// tints
+
+@each $colorname, $colorvalue in $array{
+    @each $tintname, $tintvalue in $tints{
+      .c-#{$colorname}--tint__#{$tintname}{
+          color: rgba($colorvalue, $tintvalue);
+      }
+    }
+}
+
+
+@each $colorname, $colorvalue in $array{
+    @each $tintname, $tintvalue in $tints{
+      .bg-#{$colorname}--tint__#{$tintname}{
+          background-color: rgba($colorvalue, $tintvalue);
+      }
+  }
+}
+
+
+// tints on white
+
+
+//@each $colorname, $colorvalue in $array{
+//
+//    $percent: 85;
+//
+//    @while $percent > 0 {
+//
+//      @if $percent == 70 {
+//        $percent: 60;
+//      }
+//      //$tintname: 100 - $percent;
+//      .c-#{$colorname}--tint-w__#{$percent} {
+//
+//        $thispercent: $percent / 100;
+//
+//        @include transtohex(color, $colorvalue, $thispercent);
+//
+//      }
+//      $percent: $percent - 15;
+//    }
+//
+//}
+//
+//
+//
+//@each $colorname, $colorvalue in $array{
+//
+//    $percent: 85;
+//
+//    @while $percent > 0 {
+//
+//      @if $percent == 70 {
+//        $percent: 60;
+//      }
+//      //$tintname: 100 - $percent;
+//      .bg-#{$colorname}--tint-w__#{$percent} {
+//
+//        $thispercent: $percent / 100;
+//
+//        @include transtohex(bg, $colorvalue, $thispercent);
+//
+//      }
+//      $percent: $percent - 15;
+//    }
+//
+//}
+
+
