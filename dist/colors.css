@@ -1,0 +1,287 @@
+.c-black {
+  color: #000; }
+
+.c-white {
+  color: #fff; }
+
+.c-pink {
+  color: #D77869; }
+
+.c-seagreen {
+  color: #6FC2B4; }
+
+.c-lightwarmgrey {
+  color: #ECEAE5; }
+
+.c-warmgrey {
+  color: #C8C2BE; }
+
+.c-purple {
+  color: #A396A3; }
+
+.c-aquablue {
+  color: #347E84; }
+
+.c-bg-black {
+  background-color: #000; }
+
+.c-bg-white {
+  background-color: #fff; }
+
+.c-bg-pink {
+  background-color: #D77869; }
+
+.c-bg-seagreen {
+  background-color: #6FC2B4; }
+
+.c-bg-lightwarmgrey {
+  background-color: #ECEAE5; }
+
+.c-bg-warmgrey {
+  background-color: #C8C2BE; }
+
+.c-bg-purple {
+  background-color: #A396A3; }
+
+.c-bg-aquablue {
+  background-color: #347E84; }
+
+.c-black--tint__85 {
+  color: rgba(0, 0, 0, 0.85); }
+
+.c-black--tint__60 {
+  color: rgba(0, 0, 0, 0.6); }
+
+.c-black--tint__45 {
+  color: rgba(0, 0, 0, 0.45); }
+
+.c-black--tint__30 {
+  color: rgba(0, 0, 0, 0.3); }
+
+.c-black--tint__15 {
+  color: rgba(0, 0, 0, 0.15); }
+
+.c-white--tint__85 {
+  color: rgba(255, 255, 255, 0.85); }
+
+.c-white--tint__60 {
+  color: rgba(255, 255, 255, 0.6); }
+
+.c-white--tint__45 {
+  color: rgba(255, 255, 255, 0.45); }
+
+.c-white--tint__30 {
+  color: rgba(255, 255, 255, 0.3); }
+
+.c-white--tint__15 {
+  color: rgba(255, 255, 255, 0.15); }
+
+.c-pink--tint__85 {
+  color: rgba(215, 120, 105, 0.85); }
+
+.c-pink--tint__60 {
+  color: rgba(215, 120, 105, 0.6); }
+
+.c-pink--tint__45 {
+  color: rgba(215, 120, 105, 0.45); }
+
+.c-pink--tint__30 {
+  color: rgba(215, 120, 105, 0.3); }
+
+.c-pink--tint__15 {
+  color: rgba(215, 120, 105, 0.15); }
+
+.c-seagreen--tint__85 {
+  color: rgba(111, 194, 180, 0.85); }
+
+.c-seagreen--tint__60 {
+  color: rgba(111, 194, 180, 0.6); }
+
+.c-seagreen--tint__45 {
+  color: rgba(111, 194, 180, 0.45); }
+
+.c-seagreen--tint__30 {
+  color: rgba(111, 194, 180, 0.3); }
+
+.c-seagreen--tint__15 {
+  color: rgba(111, 194, 180, 0.15); }
+
+.c-lightwarmgrey--tint__85 {
+  color: rgba(236, 234, 229, 0.85); }
+
+.c-lightwarmgrey--tint__60 {
+  color: rgba(236, 234, 229, 0.6); }
+
+.c-lightwarmgrey--tint__45 {
+  color: rgba(236, 234, 229, 0.45); }
+
+.c-lightwarmgrey--tint__30 {
+  color: rgba(236, 234, 229, 0.3); }
+
+.c-lightwarmgrey--tint__15 {
+  color: rgba(236, 234, 229, 0.15); }
+
+.c-warmgrey--tint__85 {
+  color: rgba(200, 194, 190, 0.85); }
+
+.c-warmgrey--tint__60 {
+  color: rgba(200, 194, 190, 0.6); }
+
+.c-warmgrey--tint__45 {
+  color: rgba(200, 194, 190, 0.45); }
+
+.c-warmgrey--tint__30 {
+  color: rgba(200, 194, 190, 0.3); }
+
+.c-warmgrey--tint__15 {
+  color: rgba(200, 194, 190, 0.15); }
+
+.c-purple--tint__85 {
+  color: rgba(163, 150, 163, 0.85); }
+
+.c-purple--tint__60 {
+  color: rgba(163, 150, 163, 0.6); }
+
+.c-purple--tint__45 {
+  color: rgba(163, 150, 163, 0.45); }
+
+.c-purple--tint__30 {
+  color: rgba(163, 150, 163, 0.3); }
+
+.c-purple--tint__15 {
+  color: rgba(163, 150, 163, 0.15); }
+
+.c-aquablue--tint__85 {
+  color: rgba(52, 126, 132, 0.85); }
+
+.c-aquablue--tint__60 {
+  color: rgba(52, 126, 132, 0.6); }
+
+.c-aquablue--tint__45 {
+  color: rgba(52, 126, 132, 0.45); }
+
+.c-aquablue--tint__30 {
+  color: rgba(52, 126, 132, 0.3); }
+
+.c-aquablue--tint__15 {
+  color: rgba(52, 126, 132, 0.15); }
+
+.bg-black--tint__85 {
+  background-color: rgba(0, 0, 0, 0.85); }
+
+.bg-black--tint__60 {
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.bg-black--tint__45 {
+  background-color: rgba(0, 0, 0, 0.45); }
+
+.bg-black--tint__30 {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.bg-black--tint__15 {
+  background-color: rgba(0, 0, 0, 0.15); }
+
+.bg-white--tint__85 {
+  background-color: rgba(255, 255, 255, 0.85); }
+
+.bg-white--tint__60 {
+  background-color: rgba(255, 255, 255, 0.6); }
+
+.bg-white--tint__45 {
+  background-color: rgba(255, 255, 255, 0.45); }
+
+.bg-white--tint__30 {
+  background-color: rgba(255, 255, 255, 0.3); }
+
+.bg-white--tint__15 {
+  background-color: rgba(255, 255, 255, 0.15); }
+
+.bg-pink--tint__85 {
+  background-color: rgba(215, 120, 105, 0.85); }
+
+.bg-pink--tint__60 {
+  background-color: rgba(215, 120, 105, 0.6); }
+
+.bg-pink--tint__45 {
+  background-color: rgba(215, 120, 105, 0.45); }
+
+.bg-pink--tint__30 {
+  background-color: rgba(215, 120, 105, 0.3); }
+
+.bg-pink--tint__15 {
+  background-color: rgba(215, 120, 105, 0.15); }
+
+.bg-seagreen--tint__85 {
+  background-color: rgba(111, 194, 180, 0.85); }
+
+.bg-seagreen--tint__60 {
+  background-color: rgba(111, 194, 180, 0.6); }
+
+.bg-seagreen--tint__45 {
+  background-color: rgba(111, 194, 180, 0.45); }
+
+.bg-seagreen--tint__30 {
+  background-color: rgba(111, 194, 180, 0.3); }
+
+.bg-seagreen--tint__15 {
+  background-color: rgba(111, 194, 180, 0.15); }
+
+.bg-lightwarmgrey--tint__85 {
+  background-color: rgba(236, 234, 229, 0.85); }
+
+.bg-lightwarmgrey--tint__60 {
+  background-color: rgba(236, 234, 229, 0.6); }
+
+.bg-lightwarmgrey--tint__45 {
+  background-color: rgba(236, 234, 229, 0.45); }
+
+.bg-lightwarmgrey--tint__30 {
+  background-color: rgba(236, 234, 229, 0.3); }
+
+.bg-lightwarmgrey--tint__15 {
+  background-color: rgba(236, 234, 229, 0.15); }
+
+.bg-warmgrey--tint__85 {
+  background-color: rgba(200, 194, 190, 0.85); }
+
+.bg-warmgrey--tint__60 {
+  background-color: rgba(200, 194, 190, 0.6); }
+
+.bg-warmgrey--tint__45 {
+  background-color: rgba(200, 194, 190, 0.45); }
+
+.bg-warmgrey--tint__30 {
+  background-color: rgba(200, 194, 190, 0.3); }
+
+.bg-warmgrey--tint__15 {
+  background-color: rgba(200, 194, 190, 0.15); }
+
+.bg-purple--tint__85 {
+  background-color: rgba(163, 150, 163, 0.85); }
+
+.bg-purple--tint__60 {
+  background-color: rgba(163, 150, 163, 0.6); }
+
+.bg-purple--tint__45 {
+  background-color: rgba(163, 150, 163, 0.45); }
+
+.bg-purple--tint__30 {
+  background-color: rgba(163, 150, 163, 0.3); }
+
+.bg-purple--tint__15 {
+  background-color: rgba(163, 150, 163, 0.15); }
+
+.bg-aquablue--tint__85 {
+  background-color: rgba(52, 126, 132, 0.85); }
+
+.bg-aquablue--tint__60 {
+  background-color: rgba(52, 126, 132, 0.6); }
+
+.bg-aquablue--tint__45 {
+  background-color: rgba(52, 126, 132, 0.45); }
+
+.bg-aquablue--tint__30 {
+  background-color: rgba(52, 126, 132, 0.3); }
+
+.bg-aquablue--tint__15 {
+  background-color: rgba(52, 126, 132, 0.15); }
