@@ -1,10 +1,10 @@
 /*
-# Component: Colors
+## Component: Colors
 */
 
 
 /*
-## Transparency functions
+### Transparency functions
 
 ```
 @function trans($color, $percentage) {
@@ -22,7 +22,7 @@
 
 
 /*
-## Transparency to hex value mixin
+### Transparency to hex value mixin
 
 ```
 @mixin transtohex($type, $color, $percentage) {
@@ -56,7 +56,7 @@
 
 
 /*
-## Color contstants
+### Color contstants
 ```
 $c-black: #000;
 $c-white: #fff;
@@ -83,11 +83,11 @@ $array: (black, $c-black), (white, $c-white), (pink, $c-pink), (seagreen, $c-sea
 $tints: (85, .85), (60, .60), (45, .45), (30, .30), (15, .15);
 
 /*
-## Color class-helpers
+### Color class-helpers
 */
 
 /*
-### Generate class-helpers for each text-color
+#### Generate class-helpers for each text-color
 ```
 @each $colorname, $colorvalue in $array{
     .c-#{$colorname}{
@@ -96,7 +96,7 @@ $tints: (85, .85), (60, .60), (45, .45), (30, .30), (15, .15);
 }
 ```
 
-#### Generated values
+##### Generated values
 
 - `.c-black`
 - `.c-white`
@@ -107,7 +107,7 @@ $tints: (85, .85), (60, .60), (45, .45), (30, .30), (15, .15);
 - `.c-purple`
 - `.c-aquablue`
 
-#### Examples:
+##### Examples:
 
 <div class="lo-full c-black"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
 <div class="lo-full c-bg-black c-white"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
@@ -128,7 +128,7 @@ $tints: (85, .85), (60, .60), (45, .45), (30, .30), (15, .15);
     }
 }
 /*
-### Generate class-helpers for each background-color
+#### Generate class-helpers for each background-color
 ```
 @each $colorname, $colorvalue in $array{
     .c-bg-#{$colorname}{
@@ -137,7 +137,7 @@ $tints: (85, .85), (60, .60), (45, .45), (30, .30), (15, .15);
 }
 ```
 
-#### Generated values:
+##### Generated values:
 
 - `.c-bg-black`
 - `.c-bg-white`
@@ -148,7 +148,7 @@ $tints: (85, .85), (60, .60), (45, .45), (30, .30), (15, .15);
 - `.c-bg-purple`
 - `.c-bg-aquablue`
 
-#### Examples:
+##### Examples:
 
 <div class="lo-full c-bg-black"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
 <div class="lo-full c-bg-white"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
@@ -169,7 +169,7 @@ $tints: (85, .85), (60, .60), (45, .45), (30, .30), (15, .15);
 }
 
 /*
-### Generate class-helpers for each text-color tints
+#### Generate class-helpers for each text-color tints
 ```
 @each $colorname, $colorvalue in $array{
     @each $tintname, $tintvalue in $tints{
@@ -190,7 +190,7 @@ $tints: (85, .85), (60, .60), (45, .45), (30, .30), (15, .15);
 }
 
 /*
-### Generate class-helpers for each background-color tints
+#### Generate class-helpers for each background-color tints
 ```
 @each $colorname, $colorvalue in $array{
     @each $tintname, $tintvalue in $tints{
