@@ -1,3 +1,106 @@
+/*
+## Component: Colors
+*/
+/*
+### Transparency functions
+
+```
+@function trans($color, $percentage) {
+  @return lighten($color, (1-$percentage)*5%);
+}
+```
+
+
+*/
+/*
+### Transparency to hex value mixin
+
+```
+@mixin transtohex($type, $color, $percentage) {
+    @if $type == color {
+        color: trans($color, $percentage);
+        //color: rgba($color, $percentage);
+    }
+    @if $type == bg {
+        background-color: trans($color, $percentage);
+        //background-color: rgba($color, $percentage);
+    }
+}
+```
+
+
+*/
+/*
+### Color contstants
+```
+$c-black: #000;
+$c-white: #fff;
+$c-pink: #D77869;
+$c-seagreen: #6FC2B4;
+$c-lightwarmgrey:#ECEAE5;
+$c-warmgrey:#C8C2BE;
+$c-purple:#A396A3;
+$c-aquablue:#347E84;
+$hiof-blue: #073B58;
+$color-primary-action: #3276b1;
+$navbar-default-link-color: $color-primary-action;
+$black: $c-black;
+$white: $c-white;
+$array: (black: $c-black, white: $c-white, pink: $c-pink, seagreen: $c-seagreen, lightwarmgrey: $c-lightwarmgrey, warmgrey: $c-warmgrey, purple: $c-purple, aquablue: $c-aquablue);
+$tints: (85: .85, 60: .60, 45: .45, 30: .30, 15: .15);
+```
+*/
+/*
+### Color contstants
+```
+$c-black: #000;
+$c-white: #fff;
+$c-pink: #D77869;
+$c-seagreen: #6FC2B4;
+$c-lightwarmgrey:#ECEAE5;
+$c-warmgrey:#C8C2BE;
+$c-purple:#A396A3;
+$c-aquablue:#347E84;
+$hiof-blue: #073B58;
+$color-primary-action: #3276b1;
+$navbar-default-link-color: $color-primary-action;
+$black: $c-black;
+$white: $c-white;
+$array: (black: $c-black, white: $c-white, pink: $c-pink, seagreen: $c-seagreen, lightwarmgrey: $c-lightwarmgrey, warmgrey: $c-warmgrey, purple: $c-purple, aquablue: $c-aquablue);
+$tints: (85: .85, 60: .60, 45: .45, 30: .30, 15: .15);
+```
+*/
+/*
+### Color class-helpers
+*/
+/*
+#### Generate class-helpers for each text-color
+
+
+##### Generated values
+
+- `.c-black`
+- `.c-white`
+- `.c-pink`
+- `.c-seagreen`
+- `.c-lightwarmgrey`
+- `.c-warmgrey`
+- `.c-purple`
+- `.c-aquablue`
+
+##### Examples:
+
+<div class="lo-full c-black"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
+<div class="lo-full c-bg-black c-white"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
+<div class="lo-full c-pink"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
+<div class="lo-full c-seagreen"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
+<div class="lo-full c-lightwarmgrey"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
+<div class="lo-full c-warmgrey"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
+<div class="lo-full c-purple"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
+<div class="lo-full c-aquablue"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
+
+
+*/
 .c-black {
   color: #000; }
 
@@ -22,6 +125,34 @@
 .c-aquablue {
   color: #347E84; }
 
+/*
+#### Generate class-helpers for each background-color
+
+
+##### Generated values:
+
+- `.c-bg-black`
+- `.c-bg-white`
+- `.c-bg-pink`
+- `.c-bg-seagreen`
+- `.c-bg-lightwarmgrey`
+- `.c-bg-warmgrey`
+- `.c-bg-purple`
+- `.c-bg-aquablue`
+
+##### Examples:
+
+<div class="lo-full c-bg-black"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
+<div class="lo-full c-bg-white"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
+<div class="lo-full c-bg-pink"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
+<div class="lo-full c-bg-seagreen"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
+<div class="lo-full c-bg-lightwarmgrey"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
+<div class="lo-full c-bg-warmgrey"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
+<div class="lo-full c-bg-purple"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
+<div class="lo-full c-bg-aquablue"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
+
+
+*/
 .c-bg-black {
   background-color: #000; }
 
@@ -46,6 +177,10 @@
 .c-bg-aquablue {
   background-color: #347E84; }
 
+/*
+#### Generate class-helpers for each text-color tints
+
+*/
 .c-black--tint__85 {
   color: rgba(0, 0, 0, 0.85); }
 
@@ -166,6 +301,10 @@
 .c-aquablue--tint__15 {
   color: rgba(52, 126, 132, 0.15); }
 
+/*
+#### Generate class-helpers for each background-color tints
+
+*/
 .bg-black--tint__85 {
   background-color: rgba(0, 0, 0, 0.85); }
 

@@ -1,13 +1,12 @@
 {
   "name": "colors",
-  "version": "1.0.0-beta.6",
   "homepage": "https://github.com/hiof/colors",
   "authors": [
-    "Kenneth Dahlstrøm <kenneth.dahlstrom@hiof.no>"
+    "Kenneth Lindbeck-Dahlstrøm <kld@hiof.no>"
   ],
   "description": "colors plugin",
-  "license": "GNU",
-  "dependencies": {
+  "license": "GPL-3.0",
+  "devDependencies": {
     "sass-mq": "~3.2.2"
   }
 }
