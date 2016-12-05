@@ -1,10 +1,10 @@
 /*
-# Component: Colors
+## Component: Colors
 */
 
 
 /*
-## Transparency functions
+### Transparency functions
 
 ```
 @function trans($color, $percentage) {
@@ -22,7 +22,7 @@
 
 
 /*
-## Transparency to hex value mixin
+### Transparency to hex value mixin
 
 ```
 @mixin transtohex($type, $color, $percentage) {
@@ -56,7 +56,7 @@
 
 
 /*
-## Color contstants
+### Color contstants
 ```
 $c-black: #000;
 $c-white: #fff;
@@ -66,37 +66,27 @@ $c-lightwarmgrey:#ECEAE5;
 $c-warmgrey:#C8C2BE;
 $c-purple:#A396A3;
 $c-aquablue:#347E84;
-$array: (black, $c-black), (white, $c-white), (pink, $c-pink), (seagreen, $c-seagreen), (lightwarmgrey, $c-lightwarmgrey), (warmgrey, $c-warmgrey), (purple, $c-purple), (aquablue, $c-aquablue);
-$tints: (85, .85), (60, .60), (45, .45), (30, .30), (15, .15);
+$hiof-blue: #073B58;
+$color-primary-action: #3276b1;
+$navbar-default-link-color: $color-primary-action;
+$black: $c-black;
+$white: $c-white;
+$array: (black: $c-black, white: $c-white, pink: $c-pink, seagreen: $c-seagreen, lightwarmgrey: $c-lightwarmgrey, warmgrey: $c-warmgrey, purple: $c-purple, aquablue: $c-aquablue);
+$tints: (85: .85, 60: .60, 45: .45, 30: .30, 15: .15);
 ```
 */
 
-$c-black: #000;
-$c-white: #fff;
-$c-pink: #D77869;
-$c-seagreen: #6FC2B4;
-$c-lightwarmgrey:#ECEAE5;
-$c-warmgrey:#C8C2BE;
-$c-purple:#A396A3;
-$c-aquablue:#347E84;
-$array: (black, $c-black), (white, $c-white), (pink, $c-pink), (seagreen, $c-seagreen), (lightwarmgrey, $c-lightwarmgrey), (warmgrey, $c-warmgrey), (purple, $c-purple), (aquablue, $c-aquablue);
-$tints: (85, .85), (60, .60), (45, .45), (30, .30), (15, .15);
+@import "_variables";
 
 /*
-## Color class-helpers
+### Color class-helpers
 */
 
 /*
-### Generate class-helpers for each text-color
-```
-@each $colorname, $colorvalue in $array{
-    .c-#{$colorname}{
-        color: $colorvalue;
-    }
-}
-```
+#### Generate class-helpers for each text-color
 
-#### Generated values
+
+##### Generated values
 
 - `.c-black`
 - `.c-white`
@@ -107,7 +97,7 @@ $tints: (85, .85), (60, .60), (45, .45), (30, .30), (15, .15);
 - `.c-purple`
 - `.c-aquablue`
 
-#### Examples:
+##### Examples:
 
 <div class="lo-full c-black"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
 <div class="lo-full c-bg-black c-white"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
@@ -121,23 +111,17 @@ $tints: (85, .85), (60, .60), (45, .45), (30, .30), (15, .15);
 
 */
 
-
 @each $colorname, $colorvalue in $array{
     .c-#{$colorname}{
         color: $colorvalue;
     }
 }
-/*
-### Generate class-helpers for each background-color
-```
-@each $colorname, $colorvalue in $array{
-    .c-bg-#{$colorname}{
-        background-color: $colorvalue;
-    }
-}
-```
 
-#### Generated values:
+/*
+#### Generate class-helpers for each background-color
+
+
+##### Generated values:
 
 - `.c-bg-black`
 - `.c-bg-white`
@@ -148,7 +132,7 @@ $tints: (85, .85), (60, .60), (45, .45), (30, .30), (15, .15);
 - `.c-bg-purple`
 - `.c-bg-aquablue`
 
-#### Examples:
+##### Examples:
 
 <div class="lo-full c-bg-black"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
 <div class="lo-full c-bg-white"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>
@@ -169,16 +153,8 @@ $tints: (85, .85), (60, .60), (45, .45), (30, .30), (15, .15);
 }
 
 /*
-### Generate class-helpers for each text-color tints
-```
-@each $colorname, $colorvalue in $array{
-    @each $tintname, $tintvalue in $tints{
-      .c-#{$colorname}--tint__#{$tintname}{
-          color: rgba($colorvalue, $tintvalue);
-      }
-    }
-}
-```
+#### Generate class-helpers for each text-color tints
+
 */
 
 @each $colorname, $colorvalue in $array{
@@ -190,16 +166,8 @@ $tints: (85, .85), (60, .60), (45, .45), (30, .30), (15, .15);
 }
 
 /*
-### Generate class-helpers for each background-color tints
-```
-@each $colorname, $colorvalue in $array{
-    @each $tintname, $tintvalue in $tints{
-      .bg-#{$colorname}--tint__#{$tintname}{
-          background-color: rgba($colorvalue, $tintvalue);
-      }
-  }
-}
-```
+#### Generate class-helpers for each background-color tints
+
 */
 
 @each $colorname, $colorvalue in $array{
